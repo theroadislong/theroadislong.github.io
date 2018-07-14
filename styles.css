@@ -25,6 +25,7 @@ section p, section h2 {
 	flex-wrap: wrap;
 	color: white;
 	max-width: 1375px;
+	align-content:space-between;
 }
 
 .columns section {
@@ -34,6 +35,10 @@ section p, section h2 {
 	margin: 2px;
 	background-position: center;
 	background-size: cover;
+
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-end;
 }
 
 .columns section:first-child {
