@@ -25,7 +25,7 @@ section p, section h2 {
 	flex-wrap: wrap;
 	color: white;
 	justify-content: flex-start;
-	align-items: baseline;
+	max-width: 1375px;
 }
 
 .columns section {
@@ -33,38 +33,46 @@ section p, section h2 {
 	height: 370px;
 	background-color: lightyellow;
 	margin: 2px;
-	background-image: url(images/1.jpg);
+	
 	background-position: center;
 	background-size: cover;
 }
 
 .columns section:first-child {
-	flex-grow:1;
+	background-image: url(images/1.jpg);
+	flex-grow:2;
+	flex-basis: 50%;
 
 }
 
 .columns section:nth-child(2) {
 	background-image:url(images/2.jpg);
+	flex-grow:1;
 }
 
 .columns section:nth-child(3) {
 	background-image:url(images/3.jpg);
+	flex-grow:1;
 }
 
 .columns section:nth-child(4) {
 	background-image:url(images/4.jpeg);
+	flex-grow:1;
 }
 
 .columns section:nth-child(5) {
 	background-image:url(images/5.jpg);
+	flex-grow:1;
 }
 
 .columns section:nth-child(6) {
 	background-image:url(images/6.jpg);
+	flex-grow:1;
 }
 
 .columns section:nth-child(7) {	
 	background-image:url(images/7.jpg);
+	flex-grow:1;
 }
 
 
