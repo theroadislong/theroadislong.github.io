@@ -24,7 +24,6 @@ section p, section h2 {
 	flex-direction: row;
 	flex-wrap: wrap;
 	color: white;
-	justify-content: flex-start;
 	max-width: 1375px;
 }
 
@@ -33,7 +32,6 @@ section p, section h2 {
 	height: 370px;
 	background-color: lightyellow;
 	margin: 2px;
-	
 	background-position: center;
 	background-size: cover;
 }
@@ -74,5 +72,3 @@ section p, section h2 {
 	background-image:url(images/7.jpg);
 	flex-grow:1;
 }
-
-
