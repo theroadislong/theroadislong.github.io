@@ -25,56 +25,50 @@ section p, section h2 {
 	flex-wrap: wrap;
 	color: white;
 	max-width: 1375px;
-	align-content:space-between;
+	align-content: flex-start;
 }
 
 .columns section {
-	width: 327px;
 	height: 370px;
 	background-color: lightyellow;
-	margin: 2px;
+	margin-right: 1px;
+	margin-top: 1px;
 	background-position: center;
 	background-size: cover;
 
 	display:flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	align-items: baseline;
+	flex-basis: 24%;
+	flex-grow:1;
 }
 
 .columns section:first-child {
 	background-image: url(images/1.jpg);
 	flex-grow:2;
-	flex-basis: 50%;
-
+	flex-basis: 48%;
 }
 
 .columns section:nth-child(2) {
 	background-image:url(images/2.jpg);
-	flex-grow:1;
 }
 
 .columns section:nth-child(3) {
 	background-image:url(images/3.jpg);
-	flex-grow:1;
 }
 
 .columns section:nth-child(4) {
 	background-image:url(images/4.jpeg);
-	flex-grow:1;
 }
 
 .columns section:nth-child(5) {
 	background-image:url(images/5.jpg);
-	flex-grow:1;
 }
 
 .columns section:nth-child(6) {
 	background-image:url(images/6.jpg);
-	flex-grow:1;
 }
 
-.columns section:nth-child(7) {	
+.columns section:last-child {	
 	background-image:url(images/7.jpg);
-	flex-grow:1;
 }
