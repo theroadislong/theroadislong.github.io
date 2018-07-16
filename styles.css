@@ -27,15 +27,13 @@ section p, section h2 {
 	color: white;
 	max-width: 1375px;
 	align-content: flex-start;
+	padding:3px;
 }
 
 .columns .wrapper {
-	height: 370px;
-	background-position: center;
-	background-size: cover;
-	display:flex;
-	flex-direction: column;
-	justify-content: flex-end;
+	
+	
+	
 	flex-grow:1;
 	flex-basis: 25%;
 }
@@ -45,35 +43,45 @@ section p, section h2 {
 	flex-basis: 50%;
 }
 
-.wrapper{
+.wrapper section{
+	height: 370px;
 	margin-right: 1px;
 	margin-bottom: 1px;
+
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	background-position: center;
+	background-size: cover;
 }
 
-.columns .wrapper:first-child{
+
+.columns .wrapper:first-child section{
 	background-image: url(images/1.jpg);
 }
 
-.columns .wrapper:nth-child(2){
+.columns .wrapper:nth-child(2) section{
 	background-image:url(images/2.jpg);
 }
 
-.columns .wrapper:nth-child(3) {
+.columns .wrapper:nth-child(3) section{
 	background-image:url(images/3.jpg);
 }
 
-.columns .wrapper:nth-child(4) {
+.columns .wrapper:nth-child(4) section{
 	background-image:url(images/4.jpeg);
 }
 
-.columns .wrapper:nth-child(5) {
+.columns .wrapper:nth-child(5) section{
 	background-image:url(images/5.jpg);
 }
 
-.columns .wrapper:nth-child(6) {
+.columns .wrapper:nth-child(6) section{
 	background-image:url(images/6.jpg);
 }
 
-.columns .wrapper:last-child {
+.columns .wrapper:last-child section{
 	background-image:url(images/7.jpg);
 }
+
