@@ -15,7 +15,8 @@ p {
 }
 
 section p, section h2 {
-	margin-left:30px;
+	margin-left:20px;
+	margin-right:10px;
 
 }
 
@@ -26,53 +27,51 @@ section p, section h2 {
 	color: white;
 	max-width: 1375px;
 	align-content: flex-start;
-	padding: 5px;
 }
 
-.columns section {
+.columns .wrapper section{
 	height: 370px;
-	background-color: lightyellow;
 	background-position: center;
 	background-size: cover;
-
 	display:flex;
 	flex-direction: column;
 	justify-content: flex-end;
 	flex-basis: 25%;
 	flex-grow:1;
+	padding: 2px;
 }
 
-.columns section:first-child {
+.columns .wrapper:first-child section {
 	background-image: url(images/1.jpg);
 	flex-grow:2;
 	flex-basis: 50%;
 }
 
-.columns section:nth-child(2) {
+.columns .wrapper:nth-child(2) section{
 	background-image:url(images/2.jpg);
 }
 
-.columns section:nth-child(3) {
+.columns .wrapper:nth-child(3) section{
 	background-image:url(images/3.jpg);
 }
 
-.columns section:nth-child(4) {
+.columns .wrapper:nth-child(4) section{
 	background-image:url(images/4.jpeg);
 }
 
-.columns section:nth-child(5) {
+.columns .wrapper:nth-child(5) section{
 	background-image:url(images/5.jpg);
 }
 
-.columns section:nth-child(6) {
+.columns .wrapper:nth-child(6) section{
 	background-image:url(images/6.jpg);
 }
 
-.columns section:last-child {	
+.columns .wrapper:last-child section{
 	background-image:url(images/7.jpg);
 }
 
 div.wrapper {
-	margin-left: 2px;
-	margin-top: 2px;
+	margin-right: 1px;
+	margin-bottom: 1px;
 }
