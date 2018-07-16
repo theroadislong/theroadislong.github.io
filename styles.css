@@ -26,7 +26,7 @@ section p, section h2 {
 	color: white;
 	max-width: 1375px;
 	align-content: flex-start;
-	padding:2px;
+	padding: 5px;
 }
 
 .columns section {
@@ -38,14 +38,14 @@ section p, section h2 {
 	display:flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	width: 25%;
+	flex-basis: 25%;
 	flex-grow:1;
 }
 
 .columns section:first-child {
 	background-image: url(images/1.jpg);
 	flex-grow:2;
-	width: 50%;
+	flex-basis: 50%;
 }
 
 .columns section:nth-child(2) {
@@ -73,6 +73,6 @@ section p, section h2 {
 }
 
 div.wrapper {
-	margin-top: 1px;
-	margin-right: 1px;
+	margin-left: 2px;
+	margin-top: 2px;
 }
