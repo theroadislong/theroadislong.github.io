@@ -29,49 +29,51 @@ section p, section h2 {
 	align-content: flex-start;
 }
 
-.columns .wrapper section{
+.columns .wrapper {
 	height: 370px;
 	background-position: center;
 	background-size: cover;
 	display:flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	flex-basis: 25%;
 	flex-grow:1;
-	padding: 2px;
+	flex-basis: 25%;
 }
 
-.columns .wrapper:first-child section {
-	background-image: url(images/1.jpg);
+.wrapper:first-child {
 	flex-grow:2;
 	flex-basis: 50%;
 }
 
-.columns .wrapper:nth-child(2) section{
+.wrapper{
+	margin-right: 1px;
+	margin-bottom: 1px;
+}
+
+.columns .wrapper:first-child{
+	background-image: url(images/1.jpg);
+}
+
+.columns .wrapper:nth-child(2){
 	background-image:url(images/2.jpg);
 }
 
-.columns .wrapper:nth-child(3) section{
+.columns .wrapper:nth-child(3) {
 	background-image:url(images/3.jpg);
 }
 
-.columns .wrapper:nth-child(4) section{
+.columns .wrapper:nth-child(4) {
 	background-image:url(images/4.jpeg);
 }
 
-.columns .wrapper:nth-child(5) section{
+.columns .wrapper:nth-child(5) {
 	background-image:url(images/5.jpg);
 }
 
-.columns .wrapper:nth-child(6) section{
+.columns .wrapper:nth-child(6) {
 	background-image:url(images/6.jpg);
 }
 
-.columns .wrapper:last-child section{
+.columns .wrapper:last-child {
 	background-image:url(images/7.jpg);
-}
-
-div.wrapper {
-	margin-right: 1px;
-	margin-bottom: 1px;
 }
