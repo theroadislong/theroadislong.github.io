@@ -1,3 +1,5 @@
+/* font formatting */
+
 body {
 	font-family: 'Roboto', sans-serif;
 }
@@ -14,12 +16,13 @@ p {
 	font-size:16px;
 }
 
+/* formatting text on images */
 section p, section h2 {
 	margin-left:20px;
 	margin-right:10px;
-
 }
 
+/* styles for flex-container */
 .columns {
 	display: flex;
 	flex-direction: row;
@@ -30,32 +33,32 @@ section p, section h2 {
 	padding:3px;
 }
 
+/* styles for all flex-items */
 .columns .wrapper {
-	
-	
-	
 	flex-grow:1;
 	flex-basis: 25%;
 }
 
+/* styles for first big flex-item */
 .wrapper:first-child {
 	flex-grow:2;
 	flex-basis: 50%;
 }
 
+/* this is recursion: flex-container in flex-item in flex-container :) */
 .wrapper section{
 	height: 370px;
 	margin-right: 1px;
 	margin-bottom: 1px;
-
+	
 	display:flex;
 	flex-direction: column;
 	justify-content: flex-end;
-
 	background-position: center;
 	background-size: cover;
 }
 
+/* including images */
 
 .columns .wrapper:first-child section{
 	background-image: url(images/1.jpg);
@@ -85,3 +88,9 @@ section p, section h2 {
 	background-image:url(images/7.jpg);
 }
 
+@media screen and (max-width: 960px) {
+    .columns .wrapper {
+		flex-grow:1;
+		flex-basis: 100%;
+	}
+}
