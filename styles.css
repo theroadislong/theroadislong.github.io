@@ -61,17 +61,14 @@ section p, section h2 {
 	transition: all 1s;
 }
 
-.wrapper section:hover {
+.wrapper section:hover, .wrapper section:focus {
 	/*filter: saturate(4);*/
 	transition-duration: 1s;
 	opacity:1;
-}
-
-.wrapper section:hover {
 	transform: scale(1.2);
 }
 
-.wrapper section:hover:before {
+.wrapper section:hover:before, .wrapper section:focus:before {
 	content:"Новости геймдева";
 	margin-left:20px;
 	margin-right:10px;
