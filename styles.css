@@ -88,7 +88,7 @@ section p, section h2 {
 	background-image:url(images/7.jpg);
 }
 
-@media screen and (max-width: 960px) {
+@media only screen and (max-width: 960px) {
     .columns .wrapper {
 		flex-grow:1;
 		flex-basis: 100%;
