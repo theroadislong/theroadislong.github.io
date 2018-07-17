@@ -46,7 +46,7 @@ section p, section h2 {
 }
 
 /* this is recursion: flex-container in flex-item in flex-container :) */
-.wrapper section{
+.wrapper .enlarge-wrapper section{
 	height: 370px;
 	margin-right: 1px;
 	margin-bottom: 1px;
@@ -61,6 +61,15 @@ section p, section h2 {
 .wrapper section:hover {
 	transition-duration: 1s;
 	filter: saturate(3);
+
+}
+
+.enlarge-wrapper {
+	overflow: hidden;
+}
+
+.wrapper .enlarge-wrapper section:hover {
+    transform: scale(1.1,1.1);
 }
 
 /* including images */
