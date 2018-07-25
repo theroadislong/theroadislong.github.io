@@ -10,10 +10,12 @@ h1 {
 
 h2 {
 	font-size:22px;
+	z-index: 2;
 }
 
 p {
 	font-size:16px;
+	z-index: 2;
 }
 
 /* formatting text on images */
@@ -46,33 +48,62 @@ section p, section h2 {
 }
 
 /* this is recursion: flex-container in flex-item in flex-container :) */
-.wrapper .enlarge-wrapper section{
+.wrapper section{
 	height: 370px;
 	margin-right: 1px;
 	margin-bottom: 1px;
+
+	position: relative;
 	
 	display:flex;
 	flex-direction: column;
 	justify-content: flex-end;
-	background-position: center;
-	background-size: cover;
-}
 
-.wrapper section:hover {
-	transition-duration: 1s;
-	filter: saturate(3);
-
-}
-
-.enlarge-wrapper {
 	overflow: hidden;
 }
 
-.wrapper .enlarge-wrapper section:hover {
-    transform: scale(1.1,1.1);
+.wrapper section img {
+	position:absolute;
+    height: 100%;
+    width: 100%;
+	z-index: -1;
 }
 
-/* including images */
+.wrapper section:hover img {
+transform: scale(1.1,1.1);
+transition: all 0.5s ease-out;
+}
+
+section:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,73,94,0.5);
+}
+
+section:after {
+	content: "Геймдев новости";
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	color: white;
+	font-size: 16px;
+	z-index: 2;
+}
+
+.wrapper:hover section:before {
+    display: block;
+}
+
+.wrapper:hover section:after {
+    display: block;
+}
+/* now img is in html
 
 .columns .wrapper:first-child section{
 	background-image: url(images/1.jpg);
@@ -101,6 +132,8 @@ section p, section h2 {
 .columns .wrapper:last-child section{
 	background-image:url(images/7.jpg);
 }
+
+*/
 
 @media only screen and (max-width: 960px) {
     .columns .wrapper {
