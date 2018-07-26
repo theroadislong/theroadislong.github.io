@@ -57,7 +57,7 @@ section p, section h2 {
 	position:absolute;
 }
 
-.wrapper section:hover img {
+.wrapper section:hover img, .wrapper section:focus img  {
 transform: scale(1.2);
 }
 
@@ -83,21 +83,21 @@ section:after {
 	z-index: 3;
 }
 
-.wrapper:hover section:before {
+.wrapper:hover section:before, .wrapper:focus section:before {
     display: block;
 }
 
-.wrapper:hover section:after {
+.wrapper:hover section:after, .wrapper:focus section:after {
     display: block;
 }
 
 @media only screen and (max-width: 960px) {
     .columns {
-    display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	align-content: flex-start;
-	padding:3px;
+	    display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		padding:3px;
 	}
 	.columns .wrapper {
 		flex-grow:1;
