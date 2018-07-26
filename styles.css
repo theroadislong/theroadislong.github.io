@@ -93,7 +93,14 @@ section:after {
 
 @media only screen and (max-width: 960px) {
     .columns {
-    grid-template-columns: 100%;
-    grid-template-rows: 100%;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	padding:3px;
+	}
+	.columns .wrapper {
+		flex-grow:1;
+		flex-basis: 100%;
 	}
 }
