@@ -1,0 +1,148 @@
+/* font formatting */
+
+* {
+	
+transition: all 0.6s ease-in-out;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-size:24px;
+}
+
+h2 {
+	font-size:22px;
+	z-index: 2;
+}
+
+p {
+	font-size:16px;
+	z-index: 2;
+}
+
+/* formatting text on images */
+section p, section h2 {
+	margin-left:20px;
+	margin-right:10px;
+}
+
+/* styles for flex-container */
+.columns {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	color: white;
+	max-width: 1375px;
+	align-content: flex-start;
+	padding:3px;
+}
+
+/* styles for all flex-items */
+.columns .wrapper {
+	flex-grow:1;
+	flex-basis: 25%;
+}
+
+/* styles for first big flex-item */
+.wrapper:first-child {
+	flex-grow:2;
+	flex-basis: 50%;
+}
+
+/* this is recursion: flex-container in flex-item in flex-container :) */
+.wrapper section{
+	height: 370px;
+	margin-right: 1px;
+	margin-bottom: 1px;
+
+	position: relative;
+	
+	display:flex;
+	flex-direction: column;
+	justify-content: flex-end;
+
+	overflow: hidden;
+}
+
+.wrapper section img {
+	position:absolute;
+	z-index: -1;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+}
+
+.wrapper section:hover img {
+transform: scale(1.2);
+}
+
+section:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,73,94,0.5);
+}
+
+section:after {
+	content: "Геймдев новости";
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	color: white;
+	font-size: 16px;
+	z-index: 2;
+}
+
+.wrapper:hover section:before {
+    display: block;
+}
+
+.wrapper:hover section:after {
+    display: block;
+}
+/* now img is in html
+
+.columns .wrapper:first-child section{
+	background-image: url(images/1.jpg);
+}
+
+.columns .wrapper:nth-child(2) section{
+	background-image:url(images/2.jpg);
+}
+
+.columns .wrapper:nth-child(3) section{
+	background-image:url(images/3.jpg);
+}
+
+.columns .wrapper:nth-child(4) section{
+	background-image:url(images/4.jpeg);
+}
+
+.columns .wrapper:nth-child(5) section{
+	background-image:url(images/5.jpg);
+}
+
+.columns .wrapper:nth-child(6) section{
+	background-image:url(images/6.jpg);
+}
+
+.columns .wrapper:last-child section{
+	background-image:url(images/7.jpg);
+}
+
+*/
+
+@media only screen and (max-width: 960px) {
+    .columns .wrapper {
+		flex-grow:1;
+		flex-basis: 100%;
+	}
+}

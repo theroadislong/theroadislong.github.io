@@ -1,7 +1,4 @@
-/* font formatting */
-
 * {
-	
 transition: all 0.6s ease-in-out;
 }
 
@@ -23,56 +20,41 @@ p {
 	z-index: 2;
 }
 
-/* formatting text on images */
 section p, section h2 {
 	margin-left:20px;
 	margin-right:10px;
 }
 
-/* styles for flex-container */
 .columns {
-	display: flex;
-	flex-direction: row;
-	flex-wrap: wrap;
-	color: white;
-	max-width: 1375px;
-	align-content: flex-start;
-	padding:3px;
+    display: grid;
+    max-width: 1375px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    color: white;
 }
 
-/* styles for all flex-items */
-.columns .wrapper {
-	flex-grow:1;
-	flex-basis: 25%;
-}
-
-/* styles for first big flex-item */
 .wrapper:first-child {
-	flex-grow:2;
-	flex-basis: 50%;
+    grid-column: 1/3;
 }
 
-/* this is recursion: flex-container in flex-item in flex-container :) */
-.wrapper section{
+.wrapper section {
 	height: 370px;
 	margin-right: 1px;
 	margin-bottom: 1px;
-
+	overflow: hidden;
 	position: relative;
-	
-	display:flex;
+	display: flex;
 	flex-direction: column;
 	justify-content: flex-end;
-
-	overflow: hidden;
 }
 
 .wrapper section img {
-	position:absolute;
-	z-index: -1;
 	width: 100%;
 	height: 100%;
 	object-fit: cover;
+	z-index: -1;
+
+	position:absolute;
 }
 
 .wrapper section:hover img {
@@ -98,7 +80,7 @@ section:after {
 	left: 20px;
 	color: white;
 	font-size: 16px;
-	z-index: 2;
+	z-index: 3;
 }
 
 .wrapper:hover section:before {
@@ -108,41 +90,10 @@ section:after {
 .wrapper:hover section:after {
     display: block;
 }
-/* now img is in html
-
-.columns .wrapper:first-child section{
-	background-image: url(images/1.jpg);
-}
-
-.columns .wrapper:nth-child(2) section{
-	background-image:url(images/2.jpg);
-}
-
-.columns .wrapper:nth-child(3) section{
-	background-image:url(images/3.jpg);
-}
-
-.columns .wrapper:nth-child(4) section{
-	background-image:url(images/4.jpeg);
-}
-
-.columns .wrapper:nth-child(5) section{
-	background-image:url(images/5.jpg);
-}
-
-.columns .wrapper:nth-child(6) section{
-	background-image:url(images/6.jpg);
-}
-
-.columns .wrapper:last-child section{
-	background-image:url(images/7.jpg);
-}
-
-*/
 
 @media only screen and (max-width: 960px) {
-    .columns .wrapper {
-		flex-grow:1;
-		flex-basis: 100%;
+    .columns {
+    grid-template-columns: 100%;
+    grid-template-rows: 100%;
 	}
 }
