@@ -1,5 +1,10 @@
 /* font formatting */
 
+* {
+	
+transition: all 0.6s ease-in-out;
+}
+
 body {
 	font-family: 'Roboto', sans-serif;
 }
@@ -64,14 +69,14 @@ section p, section h2 {
 
 .wrapper section img {
 	position:absolute;
-    height: 100%;
-    width: 100%;
 	z-index: -1;
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
 }
 
 .wrapper section:hover img {
-transform: scale(1.1,1.1);
-transition: all 0.5s ease-out;
+transform: scale(1.2);
 }
 
 section:before {
