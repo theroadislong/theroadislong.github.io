@@ -1,0 +1,106 @@
+* {
+transition: all 0.6s ease-in-out;
+}
+
+body {
+	font-family: 'Roboto', sans-serif;
+}
+
+h1 {
+	font-size:24px;
+}
+
+h2 {
+	font-size:22px;
+	z-index: 2;
+}
+
+p {
+	font-size:16px;
+	z-index: 2;
+}
+
+section p, section h2 {
+	margin-left:20px;
+	margin-right:10px;
+}
+
+.columns {
+    display: grid;
+    max-width: 1375px;
+    grid-template-columns: 25% 25% 25% 25%;
+    grid-template-rows: 50% 50%;
+    color: white;
+}
+
+.wrapper:first-child {
+    grid-column: 1/3;
+}
+
+.wrapper section {
+	height: 370px;
+	margin-right: 1px;
+	margin-bottom: 1px;
+	overflow: hidden;
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: flex-end;
+}
+
+.wrapper section img {
+	width: 100%;
+	height: 100%;
+	object-fit: cover;
+	z-index: -1;
+
+	position:absolute;
+}
+
+.wrapper section:hover img, .wrapper section:focus img  {
+transform: scale(1.2);
+}
+
+section:before {
+    content: "";
+    display: none;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: rgba(52,73,94,0.5);
+}
+
+section:after {
+	content: "Геймдев новости";
+	display: none;
+	position: absolute;
+	top: 10px;
+	left: 20px;
+	color: white;
+	font-size: 16px;
+	z-index: 3;
+}
+
+.wrapper:hover section:before, .wrapper:focus section:before {
+    display: block;
+}
+
+.wrapper:hover section:after, .wrapper:focus section:after {
+    display: block;
+}
+
+@media only screen and (max-width: 960px) {
+    .columns {
+	    display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-content: flex-start;
+		padding:3px;
+	}
+	.columns .wrapper {
+		flex-grow:1;
+		flex-basis: 100%;
+	}
+}
