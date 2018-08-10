@@ -1,3 +1,48 @@
 .b-page {
 	max-width: 1500px;
 }
+
+.b-page__header {
+	/*  непонимаю как правильно задать размер фоновой картинке, пока так  
+	width:100%;
+	height:1000px;
+	
+	background-image: url("header.jpg");
+	background-size: cover;
+	*/
+	background-color: lightyellow;
+}
+
+.header__nav {
+	display: flex;
+	flex-direction: row;
+	justify-content: flex-start;
+}
+
+.header__nav li {
+	list-style:none;
+	margin-right: 10px;
+}
+
+.header__nav a {
+	color:gray;
+	text-decoration: none;
+}
+
+.header__nav a:hover {
+	color:gray;
+	text-decoration: underline;
+}
+
+
+/* для мобильных, все пункты меню друг под другом */
+@media all and (max-width: 600px) {
+  
+  .header__nav {
+    flex-wrap: wrap;
+  }
+  
+  .header__nav li {
+    flex-basis: 100%;
+  }
+}
