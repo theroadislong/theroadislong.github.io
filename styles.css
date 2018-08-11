@@ -3,33 +3,26 @@
 }
 
 .b-page__header {
-	/*  непонимаю как правильно задать размер фоновой картинке, пока так  
-	width:100%;
-	height:1000px;
-	
-	background-image: url("header.jpg");
-	background-size: cover;
-	*/
 	background-color: lightyellow;
 }
 
-.header__nav {
+.header__nav, .header__social {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 }
 
-.header__nav li {
+.header__nav li, .header__social li {
 	list-style:none;
 	margin-right: 10px;
 }
 
-.header__nav a {
+.header__nav a, .header__social a {
 	color:gray;
 	text-decoration: none;
 }
 
-.header__nav a:hover {
+.header__nav a:hover, .header__social a:hover {
 	color:gray;
 	text-decoration: underline;
 }
