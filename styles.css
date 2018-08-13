@@ -23,21 +23,23 @@
 	display: flex;
 }
 
-.header__nav li, 
-.header__social li {
+.header__nav li {
 	list-style: none;
 	margin-right: 45px;
 	font-size: 14px;
 }
 
-.header__nav a, 
-.header__social a {
+.header__social li {
+	list-style: none;
+	margin-right: 20px;
+}
+
+.header__nav a {
 	color:gray;
 	text-decoration: none;
 }
 
-.header__nav a:hover, 
-.header__social a:hover {
+.header__nav a:hover {
 	color:gray;
 	text-decoration: underline;
 }
@@ -51,7 +53,35 @@
 	font-size: 22px;
 	color: gray;
 	font-weight: 300;
+}
 
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 2px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: white;
+  color: gray;
+}
+
+.fa-twitter {
+  background: white;
+  color: gray;
+}
+
+.fa-google {
+  background: white;
+  color: gray;
 }
 
 /* для мобильных, все пункты меню друг под другом 
