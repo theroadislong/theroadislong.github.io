@@ -1,34 +1,60 @@
 .b-page {
 	max-width: 1500px;
+	font-family: 'Raleway', sans-serif;
 }
 
 .b-page__header {
-	background-color: lightyellow;
+	background-color: lightblue;
 }
 
-.header__nav, .header__social {
+.menu-wrapper {
 	display: flex;
 	flex-direction: row;
 	justify-content: flex-start;
 }
 
-.header__nav li, .header__social li {
-	list-style:none;
-	margin-right: 10px;
+.flex-wrapper {
+	background-color: lightyellow;
+	margin: 1px;
 }
 
-.header__nav a, .header__social a {
+.header__nav, 
+.header__social {
+	display: flex;
+}
+
+.header__nav li, 
+.header__social li {
+	list-style: none;
+	margin-right: 45px;
+	font-size: 14px;
+}
+
+.header__nav a, 
+.header__social a {
 	color:gray;
 	text-decoration: none;
 }
 
-.header__nav a:hover, .header__social a:hover {
+.header__nav a:hover, 
+.header__social a:hover {
 	color:gray;
 	text-decoration: underline;
 }
 
+.flex-wrapper:nth-child(3) {
+	margin-left: auto;
+}
 
-/* для мобильных, все пункты меню друг под другом */
+.flex-wrapper:nth-child(1) {
+	line-height: 44px;
+	font-size: 22px;
+	color: gray;
+	font-weight: 300;
+
+}
+
+/* для мобильных, все пункты меню друг под другом 
 @media all and (max-width: 600px) {
   
   .header__nav {
@@ -39,3 +65,4 @@
     flex-basis: 100%;
   }
 }
+*/
