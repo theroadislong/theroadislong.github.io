@@ -1,103 +1,58 @@
-.b-page {
-	max-width: 1500px;
-	font-family: 'Raleway', sans-serif;
-}
-
-.b-page__header {
-	background-color: lightblue;
-}
-
-.menu-wrapper {
-	display: flex;
-	flex-direction: row;
-	justify-content: flex-start;
-	align-items: center;
-}
-
-.flex-wrapper {
-	background-color: lightyellow;
-	margin: 1px;
-}
-
-.flex-wrapper ul {
+body {
 	margin: 0;
+	padding: 0;
+    max-width: 1500px;
 }
 
-.header__nav, 
+.header {
+    background-image: url("img/header.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+}
+
+.main__nav {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+
+    padding-left: 200px;
+    padding-right: 200px;
+    padding-top: 60px;
+}
+
+.header__nav,
 .header__social {
-	display: flex;
+    list-style: none;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.header__social {
+    margin-left: auto;
+}
+
+.header__logo img {
+    margin-right: 40px;
 }
 
 .header__nav li {
-	list-style: none;
-	margin-right: 45px;
-	font-size: 14px;
+    margin-right: 45px;
 }
 
 .header__social li {
-	list-style: none;
-	margin-right: 20px;
+    margin-right: 20px;
 }
 
-.header__nav a {
-	color:gray;
-	text-decoration: none;
+.header__nav a{
+    text-decoration: none;
+    color: #575757;
+    font-size: 14px;
+    line-height: 55px;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 400;
 }
-
-.header__nav a:hover {
-	color:gray;
-	text-decoration: underline;
-}
-
-.flex-wrapper:nth-child(3) {
-	margin-left: auto;
-}
-
-.flex-wrapper:nth-child(1) {
-	line-height: 44px;
-	font-size: 22px;
-	color: gray;
-	font-weight: 300;
-}
-
-.fa {
-  padding: 10px;
-  font-size: 10px;
-  width: 10px;
-  text-align: center;
-  text-decoration: none;
-  margin: 2px 2px;
-  border-radius: 50%;
-}
-
-.fa:hover {
-    opacity: 0.7;
-}
-
-.fa-facebook {
-  background: white;
-  color: gray;
-}
-
-.fa-twitter {
-  background: white;
-  color: gray;
-}
-
-.fa-google {
-  background: white;
-  color: gray;
-}
-
-/* для мобильных, все пункты меню друг под другом 
-@media all and (max-width: 600px) {
-  
-  .header__nav {
-    flex-wrap: wrap;
-  }
-  
-  .header__nav li {
-    flex-basis: 100%;
-  }
-}
-*/
