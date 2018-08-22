@@ -13,7 +13,8 @@ body {
 }
 
 .header {
-    background-image: url("img/header.jpg");
+
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('img/header.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -149,3 +150,50 @@ body {
     letter-spacing: 0.04em;
 }
 
+.b-page__features {
+    max-width: 1120px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.feature__heading {
+    font-size: 16px;
+    line-height: 30px;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.feature__description {
+    font-size: 14px;
+    line-height: 28px;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-align: center;
+}
+
+.b-page__features__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 300px;
+}
+
+.b-page__features__item:first-child {
+    background-image: url("img/mobile-friendly.svg");
+    background-repeat: no-repeat;
+}
+
+.b-page__features__item:nth-child(2) {
+    background-image: url("img/retina-ready.svg");
+    background-repeat: no-repeat;
+}
+
+.b-page__features__item:last-child {
+    background-image: url("img/well-documented.png");
+    background-repeat: no-repeat;
+}
