@@ -161,7 +161,9 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-items: center;
     margin: 0 auto;
+    height: 100vh;
 }
 
 .feature__heading {
@@ -171,6 +173,7 @@ body {
     font-weight: 700;
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    color: #454546;
 }
 
 .feature__description {
@@ -180,6 +183,8 @@ body {
     font-weight: 400;
     letter-spacing: 0.05em;
     text-align: center;
+    color: #727272;
+    margin-bottom: 200px;
 }
 
 .b-page__features__item {
@@ -188,6 +193,7 @@ body {
     align-items: center;
     max-width: 300px;
     padding-top: 50px;
+    margin-top: 100px;
 }
 
 .b-page__features__item:first-child {
@@ -209,4 +215,46 @@ body {
     background-repeat: no-repeat;
     background-position: top center;
     background-size: 36px 39px;
+}
+
+.b-page__video {
+    margin: 0 auto;
+    background-image: linear-gradient(rgba(255, 255, 255, 1), rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)), url('img/video.jpg');
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.section__heading {
+    font-size: 26px;
+    line-height: 30px;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+    color: #454546;
+    text-align: center;
+    margin-bottom: 24px;
+    padding: 0;
+}
+
+.video__description {
+    font-size: 16px;
+    line-height: 28px;
+    font-family: "Raleway", "Arial", sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.05em;
+    text-align: center;
+    color: #767676;
+    max-width: 620px;
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 40px;
+}
+
+.b-page__video img {
+    margin-bottom: 40px;
 }
