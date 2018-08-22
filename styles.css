@@ -1,7 +1,6 @@
 body {
 	margin: 0;
 	padding: 0;
-    max-width: 1500px;
 }
 
 .header {
@@ -12,11 +11,12 @@ body {
 }
 
 .main__nav {
+    max-width: 1500px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     align-items: center;
-
+    margin: 0 auto;
     padding-left: 200px;
     padding-right: 200px;
     padding-top: 60px;
