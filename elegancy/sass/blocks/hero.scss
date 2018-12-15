@@ -1,5 +1,5 @@
 .hero {
-  background: linear-gradient(to bottom, transparent, white), url(../../img/hero.jpg);
+  background: linear-gradient(to bottom, transparent, white), url(../img/hero.jpg);
   background-position: 0 -200px;
   background-repeat: no-repeat;
   background-size: cover;
@@ -77,15 +77,15 @@
 }
 
 .social__link--f {
-  background-image: url('../../img/s-facebook.png')
+  background-image: url('../img/s-facebook.png')
 }
 
 .social__link--t {
-  background-image: url('../../img/s-twitter.png')
+  background-image: url('../img/s-twitter.png')
 }
 
 .social__link--g {
-  background-image: url('../../img/s-google.png')
+  background-image: url('../img/s-google.png')
 }
 
 .subscription {
@@ -186,16 +186,16 @@
 }
 
 .features__list-item--mobile {
-  background-image: url("../../img/f-mobile.png"),
-                    url("../../img/separator.png");
+  background-image: url("../img/f-mobile.png"),
+                    url("../img/separator.png");
 }
 
 .features__list-item--retina {
-  background-image: url("../../img/f-retina.png"),
-  url("../../img/separator.png");
+  background-image: url("../img/f-retina.png"),
+  url("../img/separator.png");
 }
 
 .features__list-item--doc {
-  background-image: url("../../img/f-well.png"),
-  url("../../img/separator.png");
+  background-image: url("../img/f-well.png"),
+  url("../img/separator.png");
 }
