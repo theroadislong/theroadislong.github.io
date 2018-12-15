@@ -1,0 +1,56 @@
+.footer {
+  @include section;
+  background-color: #2d4e55;
+  color: white;
+  &__heading {
+    font-size: 16px;
+    line-height: 38px;
+    font-weight: bold;
+    text-transform: uppercase;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 36px;
+    margin: 0;
+    padding: 0;
+  }
+  &__img {
+    margin-bottom: 63px;
+  }
+  &__list {
+    @include list-style-reset;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  &__list-item {
+    max-width: 230px;
+  }
+  &__links-list {
+    @include list-style-reset;
+  }
+  &__links-link {
+    text-decoration: none;
+    color: white;
+    font-size: 14px;
+    line-height: 38px;
+  }
+  &__links-link:hover {
+    text-decoration: underline;
+  }
+  &__social {
+    flex-direction: column;
+  }
+  &__social-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+  }
+  &__social-text {
+    margin-left: 10px;
+  }
+}

@@ -1,0 +1,68 @@
+@font-face {
+  font-family: "Eternal Fascination";
+  font-weight: normal;
+  font-style: normal;
+  src: url("../fonts/eternal_fascination.woff2") format("woff2"), 
+       url("../fonts/eternal_fascination.woff") format("woff");
+}
+
+$font-color-black: #454546;
+$font-color-gray: #575757;
+$font-color-gray-another: #727272;
+$font-color-white: #ffffff;
+$font-color-headings: #2d4e55;
+$font-color-subheading: #7c7c7c;
+$input-gray-light: #f0f0f0;
+$input-gray-dark: #c0bebe;
+$button-subscripe: #395e66;
+$background-color-section: #fafafa;
+
+@mixin list-style-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+@mixin section {
+  padding-top: 80px;
+  padding-bottom: 100px;
+  background-color: #fafafa;
+}
+
+@mixin section__heading {
+  margin: 0;
+  padding: 0;
+  font-size: 26px;
+  line-height: 40px;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  color: $font-color-headings;
+  text-align: center;
+  margin-bottom: 14px;
+}
+
+@mixin section__subheading {
+  margin: 0;
+  padding: 0;
+  font-size: 16px;
+  line-height: 40px;
+  letter-spacing: 0.05em;
+  color: $font-color-gray-another;
+  font-weight: 300;
+  text-align: center;
+}
+
+@mixin button {
+  display: block;
+  max-width: 210px;
+  height: 52px;
+  border: 2px solid #395e66;
+  color: #395e66;
+  font-size: 16px;
+  line-height: 48px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-decoration: none;
+  letter-spacing: 0.05em;
+  text-align: center;
+}
