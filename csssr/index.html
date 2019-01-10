@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="css/styles.css">
+    <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700" rel="stylesheet">
+    <link rel="apple-touch-icon" sizes="180x180" href="apple-touch-icon.png">
+    <link rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32">
+    <link rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16">
+    <link rel="mask-icon" href="safari-pinned-tab.svg" color="#5bbad5">
+    <title>Анкета Дунаев</title>
+  </head>
+  <body>
+    <main class="container">
+      <header class="header"><img class="header__logo" src="img/header-logo.png" alt="логотип csssr" width="154" height="52"/><img class="header__stamp" src="img/header-stamp.png" alt="картинка штампа с надписью заполнено собственноручно" width="252" height="106"/></header>
+      <section class="user"><img class="user__heading" src="img/user-heading.png" alt="дело" width="221" height="118"/>
+        <form class="user__form">
+          <div class="user__form-wrapper">
+            <label class="user__form-label" for="name">Полное ФИО</label>
+            <input class="user__form-input" type="text" id="name" value="Дунаев Артём Александрович" readonly="readonly"/>
+          </div>
+          <div class="user__form-wrapper">
+            <label class="user__form-label" for="year">Год рождения</label>
+            <input class="user__form-input" type="number" id="year" value="1993" readonly="readonly"/>
+          </div>
+          <div class="user__form-wrapper">
+            <label class="user__form-label" for="city">Место жительства</label>
+            <input class="user__form-input" type="text" id="city" value="г. Тюмень, Россия" readonly="readonly"/>
+          </div>
+          <div class="user__form-wrapper">
+            <label class="user__form-label" for="skype">Скайп</label>
+            <input class="user__form-input" type="text" id="skype" value="dunaev.aa" readonly="readonly"/>
+          </div>
+          <div class="user__form-wrapper">
+            <label class="user__form-label" for="email">Почта</label>
+            <input class="user__form-input" type="text" id="email" value="dunaev.aa@yandex.ru" readonly="readonly"/>
+          </div>
+        </form>
+      </section>
+      <section class="skills">
+        <h2 class="skills__heading">Расскажите о себе чекбоксами</h2>
+        <p class="skills__description">Отметьте чекбоксами пункты, которые соответствуют вашим скиллам. Кстати, отсутствие опыта не означает, что у вас меньше шансов стать одним из наших товарищей. Это означает, что вы будете получать те задачи, с которыми гарантировано будете справляться.</p>
+        <div class="skills__basic">
+          <ul class="skills__list">
+              <li class="skills__skill">
+                <input class="skills__input" type="checkbox" id="methodology" checked="checked"/>
+                <label class="skills__label" for="methodology">БЭМ/OOCSS</label><span class="skills__box"></span>
+              </li>
+              <li class="skills__skill">
+                <input class="skills__input" type="checkbox" id="htmlpreprocessor" checked="checked"/>
+                <label class="skills__label" for="htmlpreprocessor">Pug(Jade)</label><span class="skills__box"></span>
+              </li>
+              <li class="skills__skill">
+                <input class="skills__input" type="checkbox" id="csspreprocessor" checked="checked"/>
+                <label class="skills__label" for="csspreprocessor">Stylus/LESS/SASS</label><span class="skills__box"></span>
+              </li>
+              <li class="skills__skill">
+                <input class="skills__input" type="checkbox" id="svg"/>
+                <label class="skills__label" for="svg">Работаю с SVG</label><span class="skills__box"></span>
+              </li>
+              <li class="skills__skill">
+                <input class="skills__input" type="checkbox" id="semantic" checked="checked"/>
+                <label class="skills__label" for="semantic">Верстаю семантично</label><span class="skills__box"></span>
+              </li>
+              <li class="skills__skill">
+                <input class="skills__input" type="checkbox" id="accessibility"/>
+                <label class="skills__label" for="accessibility">Accessibility (A11Y)</label><span class="skills__box"></span>
+              </li>
+              <li class="skills__skill">
+                <input class="skills__input" type="checkbox" id="es" checked="checked"/>
+                <label class="skills__label" for="es">ES2015/ES2016</label><span class="skills__box"></span>
+              </li>
+          </ul>
+        </div>
+        <div class="skills__medium">
+          <ul class="skills__list">
+              <li class="skills__skill">
+                <input class="skills__input" type="checkbox" id="gulp" checked="checked"/>
+                <label class="skills__label" for="gulp">Gulp/GRUNT</label><span class="skills__box"></span>
+              </li>
+              <li class="skills__skill">
+                <input class="skills__input" type="checkbox" id="webpack"/>
+                <label class="skills__label" for="webpack">Webpack</label><span class="skills__box"></span>
+              </li>
+              <li class="skills__skill">
+                <input class="skills__input" type="checkbox" id="webgl"/>
+                <label class="skills__label" for="webgl">Дружу с WebGL</label><span class="skills__box"></span>
+              </li>
+              <li class="skills__skill">
+                <input class="skills__input" type="checkbox" id="jquery"/>
+                <label class="skills__label" for="jquery">JQuery</label><span class="skills__box"></span>
+              </li>
+              <li class="skills__skill">
+                <input class="skills__input" type="checkbox" id="angular"/>
+                <label class="skills__label" for="angular">Знаю/изучаю Angular</label><span class="skills__box"></span>
+              </li>
+              <li class="skills__skill">
+                <input class="skills__input" type="checkbox" id="react"/>
+                <label class="skills__label" for="react">Знаю/изучаю React</label><span class="skills__box"></span>
+              </li>
+              <li class="skills__skill">
+                <input class="skills__input" type="checkbox" id="node"/>
+                <label class="skills__label" for="node">Знаю/изучаю Node.js</label><span class="skills__box"></span>
+              </li>
+          </ul>
+        </div>
+        <div class="skills__other">
+          <ul class="skills__list">
+              <li class="skills__skill">
+                <input class="skills__input" type="checkbox" id="git" checked="checked"/>
+                <label class="skills__label" for="git">Использую Git</label><span class="skills__box"></span>
+              </li>
+              <li class="skills__skill">
+                <input class="skills__input" type="checkbox" id="pixelperfect" checked="checked"/>
+                <label class="skills__label" for="pixelperfect">С глазомером всё ок</label><span class="skills__box"></span>
+              </li>
+            <li class="skills__skill">
+              <input class="skills__input" type="checkbox" id="blog" checked="checked"/>
+              <label class="skills__label" for="blog">Читаю <a class="skills__link" href="https://blog.csssr.ru" target="_blank">blog.csssr.ru</a></label><span class="skills__box"></span>
+            </li>
+              <li class="skills__skill">
+                <input class="skills__input" type="checkbox" id="lazy" checked="checked"/>
+                <label class="skills__label" for="lazy">Я ленивый(-ая)</label><span class="skills__box"></span>
+              </li>
+              <li class="skills__skill">
+                <input class="skills__input" type="checkbox" id="english" checked="checked"/>
+                <label class="skills__label" for="english">У меня хороший английский</label><span class="skills__box"></span>
+              </li>
+          </ul>
+        </div>
+      </section>
+      <section class="jslevel">
+        <h2 class="jslevel__heading">Уровень владения JavaScript</h2>
+        <div class="jslevel__slider"><img class="jslevel__slider-img" src="img/jslevel-slider.png" alt="слайдер с навыками javascript" width="769" height="16"/>
+          <input class="jslevel__input" type="range" min="1" max="100" value="19.6" id="jsrange" step="0.1"/>
+        </div>
+        <ul class="jslevel__list">
+          <li class="jslevel__item"><span class="jslevel__level">Не владею</span></li>
+          <li class="jslevel__item"><span class="jslevel__level">Использую готовые решения</span></li>
+          <li class="jslevel__item"><span class="jslevel__level">Использую готовые решения и умею их переделывать</span></li>
+          <li class="jslevel__item"><span class="jslevel__level">Пишу сложный JS с нуля</span></li>
+        </ul>
+      </section>
+      <section class="essay">
+        <h2 class="essay__heading">Расскажите о себе словами</h2>
+        <p class="essay__description">Напишите пару предложений, чем вас привлекла наша вакансия и чего вы ожидаете от работы в CSSSR. Кстати, будет здорово, если при нехватке места для текста строки будут добавляться автоматически.</p>
+        <textarea class="essay__text" rows="3" data-min-rows="3">Хочу работать у вас удаленно, постоянно развиваться и стать крутым фронтенд разработчиком</textarea>
+      </section>
+      <section class="future">
+        <h2 class="future__heading">Какие у вас планы на будущее?</h2>
+        <p class="future__description">Этот ответ ни на что не повлияет. Не беда, если в будущем ваши планы поменяются.</p>
+        <ul class="future__list">
+            <li class="future__skill">
+              <input class="future__input" type="radio" id="css" name="future"/>
+              <label class="future__label" for="css">Верстать</label><span class="future__round"></span>
+            </li>
+            <li class="future__skill">
+              <input class="future__input" type="radio" id="js" checked="checked" name="future"/>
+              <label class="future__label" for="js">Прокачиваться в JS</label><span class="future__round"></span>
+            </li>
+            <li class="future__skill">
+              <input class="future__input" type="radio" id="manager" name="future"/>
+              <label class="future__label" for="manager">Менеджерство</label><span class="future__round"></span>
+            </li>
+            <li class="future__skill">
+              <input class="future__input" type="radio" id="another" name="future"/>
+              <label class="future__label" for="another">Другое</label><span class="future__round"></span>
+            </li>
+        </ul>
+      </section>
+      <footer class="footer">
+        <p class="footer__data">Дата заполнения</p>
+        <p class="footer__date">09.01.2018</p>
+      </footer>
+    </main>
+    <script src="js/script.js"></script>
+  </body>
+</html>
