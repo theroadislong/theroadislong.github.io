@@ -72,7 +72,7 @@ body {
   padding-right: 98px;
   padding-bottom: 37px;
   padding-left: 98px;
-  margin-bottom: 100px;
+  margin-bottom: 60px;
 }
 
 @media (max-width: 900px) {
@@ -225,8 +225,8 @@ body {
 
 .map::after {
   position: absolute;
-  left: 640px;
-  top: 190px;
+  left: 633px;
+  top: 185px;
   content: "";
   width: 22px;
   height: 32px;
@@ -239,9 +239,9 @@ body {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
-  padding-top: 38px;
+  padding-top: 97px;
   padding-right: 98px;
-  padding-bottom: 37px;
+  padding-bottom: 90px;
   padding-left: 98px;
   background-color: #141414;
 }
