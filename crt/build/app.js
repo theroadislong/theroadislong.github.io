@@ -12,9 +12,6 @@ modalOpenButtons.forEach(function (element) {
 
 var modalOpen = function modalOpen() {
   modal.classList.add("modal--opened");
-  modal.addEventListener("keydown", function (event) {
-    return modalEscClose(event);
-  });
   modalCloseButton.addEventListener("click", function () {
     return modalClose();
   });
@@ -24,8 +21,8 @@ var modalClose = function modalClose() {
   modal.classList.remove("modal--opened");
 };
 
-var modalEscClose = function modalEscClose(event) {
-  if (event.keyCode === escKeyCode) {
+document.addEventListener("keydown", function (evt) {
+  if (modal.classList.contains("modal--opened") && event.keyCode === escKeyCode) {
     modal.classList.remove("modal--opened");
   }
-};
+});
