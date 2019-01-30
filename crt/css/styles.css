@@ -1,0 +1,50 @@
+.body {
+  position: relative;
+}
+
+.card {
+  display: inline-block;
+  max-width: 200px;
+  margin: 20px;
+  padding: 20px;
+  border: 2px solid blue;
+  border-radius: 10px;
+  text-align: center;
+}
+
+.card__button {
+  font-family: 'Roboto', sans-serif;
+  padding: 10px 20px;
+  color: white;
+  background-color: blue;
+  font-size: 18px;
+  line-height: 1.2;
+  border-radius: 30px;
+  cursor: pointer;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  overflow: hidden;
+}
+
+.modal--opened {
+  display: block;
+}
+
+.modal__body {
+  position: relative;
+  padding: 20px;
+  background-color: lightpink;
+}
+
+.modal__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  cursor: pointer;
+}
