@@ -146,40 +146,93 @@ var objects = [{
   id: 8,
   name: "Степан",
   date: "12.11.2019",
-  count: 10
+  count: 30
+}, {
+  id: 88,
+  name: "Анастасия",
+  date: "20.11.2018",
+  count: 34
+}, {
+  id: 8,
+  name: "Степан",
+  date: "12.11.2019",
+  count: 20
+}, {
+  id: 11,
+  name: "Анастасия",
+  date: "20.11.2018",
+  count: 34
+}, {
+  id: 111,
+  name: "Степан",
+  date: "12.11.2019",
+  count: 100
 }]; // html elements
 
 var table = document.querySelector(".main__table");
 var rowTemplate = document.querySelector(".row-template").content;
-var search = document.querySelector(".search__input");
-var select = document.querySelector(".search__select");
-var selectedSelect = "name"; // main functions
+var searchInput = document.querySelector(".search__input");
+var searchSelect = document.querySelector(".search__select");
+var sortInput = document.querySelector(".sort__input");
+var sortSelect = document.querySelector(".sort__select");
+var selectedSearchSelect = "name";
+var selectedSortSelect = "none"; // main functions
 
-var selectHandler = function selectHandler(evt) {
-  selectedSelect = evt.target.value;
-  search.addEventListener("input", function (event) {
-    return searchHandler(event);
-  });
+var searchSelectHandler = function searchSelectHandler(evt) {
+  selectedSearchSelect = evt.target.value;
 };
 
-var searchHandler = function searchHandler(evt) {
-  var currentValue = evt.target.value.toLowerCase();
+var searchHandler = function searchHandler() {
+  var searchValue = searchInput.value;
+  var sortValue = sortInput.value || "";
 
   var filterFunction = function filterFunction(object) {
-    return currentValue === "" ? object : object[selectedSelect].toString().toLowerCase().indexOf(currentValue) !== -1;
+    return searchValue === "" ? object : object[selectedSearchSelect].toString().toLowerCase().indexOf(searchValue) !== -1;
+  };
+
+  var sortBig = function sortBig(object) {
+    return searchValue === "" ? object : object[selectedSearchSelect] > sortValue;
+  };
+
+  var sortSmall = function sortSmall(object) {
+    return searchValue === "" ? object : object[selectedSearchSelect] < sortValue;
   }; // убираем все строки перед каждой генерацией
 
 
-  deleteRows(); //рендерим в таблицу те строки, которые прошли фильтрацию
+  deleteRows();
+  var filteredBySearchObjects = objects.map(prettify).filter(function (object) {
+    if (selectedSortSelect === "none") {
+      return filterFunction(object);
+    }
 
-  render(objects.map(prettify).filter(function (object) {
-    return filterFunction(object);
-  }), table);
-}; // logic
-// сначала рендерим первоначальные данные
+    if (selectedSortSelect === "big") {
+      return filterFunction(object) && sortBig(object);
+    }
+
+    if (selectedSortSelect === "small") {
+      return filterFunction(object) && sortSmall(object);
+    }
+  }); //рендерим строки по совпадению
+
+  render(filteredBySearchObjects, table);
+}; // сначала рендерим первоначальные данные
 
 
 render(objects.map(prettify), table);
-select.addEventListener("change", function (event) {
-  return selectHandler(event);
+searchInput.addEventListener("input", function (event) {
+  return searchHandler(event);
+});
+searchSelect.addEventListener("change", function (event) {
+  return searchSelectHandler(event);
+}); // больше / меньше
+
+var sortSelectHandler = function sortSelectHandler(evt) {
+  selectedSortSelect = evt.target.value;
+};
+
+sortInput.addEventListener("input", function (event) {
+  return searchHandler(event);
+});
+sortSelect.addEventListener("change", function (event) {
+  return sortSelectHandler(event);
 });
