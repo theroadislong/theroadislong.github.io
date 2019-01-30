@@ -69,3 +69,17 @@ th, td {
 .search__radio div:first-child {
   margin-right: 70px;
 }
+
+@media (max-width: 500px) {
+  .main__table {
+    font-size: 12px;
+  }
+  th, td {
+    padding: 10px;
+    min-width: 40px;
+  }
+  .row__id,
+  .row__count {
+    min-width: 20px;
+  }
+}
