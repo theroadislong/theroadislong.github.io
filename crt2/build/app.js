@@ -73,6 +73,15 @@ var getMonthNumber = function getMonthNumber(str) {
   }
 };
 
+var prettify = function prettify(element) {
+  var result = {};
+  result.id = element.id;
+  result.name = element.name;
+  result.date = prettifyDate(element.date);
+  result.count = element.count;
+  return result;
+};
+
 var deleteRows = function deleteRows() {
   var rows = document.querySelectorAll(".table__row");
   rows.forEach(function (row) {
@@ -138,22 +147,13 @@ var objects = [{
   name: "Степан",
   date: "12.11.2019",
   count: 10
-}]; // logic
+}]; // html elements
 
 var table = document.querySelector(".main__table");
 var rowTemplate = document.querySelector(".row-template").content;
-render(objects, table);
 var search = document.querySelector(".search__input");
 var select = document.querySelector(".search__select");
-var selectedSelect = "name";
-
-var searchHandler = function searchHandler(evt) {
-  deleteRows();
-  var currentValue = evt.target.value.toLowerCase();
-  render(objects.filter(function (object) {
-    return currentValue === "" ? object : object[selectedSelect].toString().toLowerCase().indexOf(currentValue) !== -1;
-  }), table);
-};
+var selectedSelect = "name"; // main functions
 
 var selectHandler = function selectHandler(evt) {
   selectedSelect = evt.target.value;
@@ -162,6 +162,24 @@ var selectHandler = function selectHandler(evt) {
   });
 };
 
+var searchHandler = function searchHandler(evt) {
+  var currentValue = evt.target.value.toLowerCase();
+
+  var filterFunction = function filterFunction(object) {
+    return currentValue === "" ? object : object[selectedSelect].toString().toLowerCase().indexOf(currentValue) !== -1;
+  }; // убираем все строки перед каждой генерацией
+
+
+  deleteRows(); //рендерим в таблицу те строки, которые прошли фильтрацию
+
+  render(objects.map(prettify).filter(function (object) {
+    return filterFunction(object);
+  }), table);
+}; // logic
+// сначала рендерим первоначальные данные
+
+
+render(objects.map(prettify), table);
 select.addEventListener("change", function (event) {
   return selectHandler(event);
 });
