@@ -1,14 +1,8 @@
-.body {
-  position: relative;
-}
-
 .card {
   display: inline-block;
   max-width: 200px;
   margin: 20px;
-  padding: 20px;
-  border: 2px solid blue;
-  border-radius: 10px;
+  padding: 10px;
   text-align: center;
 }
 
@@ -19,17 +13,23 @@
   background-color: blue;
   font-size: 18px;
   line-height: 1.2;
+  border: none;
   border-radius: 30px;
   cursor: pointer;
+}
+
+.card__button:hover {
+  background-color: lightseagreen;
 }
 
 .modal {
   display: none;
   position: fixed;
-  transform: translate(-50%, -50%);
-  top: 50%;
-  left: 50%;
-  overflow: hidden;
+  height: 100%;
+  width: 100%;
+  background:rgba(0,0,0,.8);
+  left: 0;
+  top: 0;
 }
 
 .modal--opened {
@@ -37,9 +37,13 @@
 }
 
 .modal__body {
+  transform: translate(-50%, -50%);
+  top: 50%;
+  left: 50%;
+  max-width: 500px;
   position: relative;
   padding: 20px;
-  background-color: lightpink;
+  background-color: lightseagreen;
 }
 
 .modal__close {
@@ -47,4 +51,39 @@
   top: 20px;
   right: 20px;
   cursor: pointer;
+  border: none;
+  width: 20px;
+  height: 20px;
+  padding: 0;
+  background-color: transparent;
+}
+
+.modal__close::after,
+.modal__close::before {
+  position: absolute;
+  content: '';
+  width: 22px;
+  height: 4px;
+  background-color: black;
+  top: 8px;
+  left: -1px;
+}
+
+.modal__close::after {
+  transform: rotate(45deg);
+}
+
+.modal__close::before {
+  transform: rotate(-45deg);
+}
+
+.visually-hidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px;
 }

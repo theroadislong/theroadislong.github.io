@@ -26,3 +26,8 @@ document.addEventListener("keydown", function (evt) {
     modal.classList.remove("modal--opened");
   }
 });
+document.addEventListener("click", function (evt) {
+  if (evt.target === modal) {
+    modalClose();
+  }
+});

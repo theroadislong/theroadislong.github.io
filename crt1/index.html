@@ -9,44 +9,35 @@
   </head>
   <body>
     <section class="card">
-      <h1 class="card__heading">Карточка товара</h1>
+      <h1 class="card__heading">Пример модального окна</h1>
       <p class="card__description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, beatae
-        blanditiis praesentium impedit corrupti voluptatum facere architecto,
-        quas molestiae mollitia maiores eius? Porro consequatur consectetur
-        libero doloremque vel possimus officia.
+        Модальное окно центруется, закрывается по ESC и клику на оверлей.
+        Функционал написан на ES6, код транспилируется через Babel.
       </p>
-      <button class="card__button">Заказать звонок</button>
+      <button class="card__button">Показать модалку</button>
     </section>
-    <section class="card">
-      <h1 class="card__heading">Карточка товара</h1>
-      <p class="card__description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, beatae
-        blanditiis praesentium impedit corrupti voluptatum facere architecto,
-        quas molestiae mollitia maiores eius? Porro consequatur consectetur
-        libero doloremque vel possimus officia.
-      </p>
-      <button class="card__button">Заказать звонок</button>
-    </section>
-    <section class="card">
-      <h1 class="card__heading">Карточка товара</h1>
-      <p class="card__description">
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum, beatae
-        blanditiis praesentium impedit corrupti voluptatum facere architecto,
-        quas molestiae mollitia maiores eius? Porro consequatur consectetur
-        libero doloremque vel possimus officia.
-      </p>
-      <button class="card__button">Заказать звонок</button>
-    </section>
-    <div class="modal">
-      <div class="modal__body">
+    <div class="modal" role="dialog">
+      <div class="modal__body" role="document">
+        <h2 class="modal__title">Тут какой-то мощный заголовок</h2>
         <p class="modal__text">
-          Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente
-          nesciunt amet, exercitationem et quidem nostrum magni quas officiis
-          sunt optio, corporis consequuntur voluptatibus reprehenderit
-          blanditiis. Provident dolore quia fugit alias.
+          Тут текст, собственно, ради которого и открывалось модальное окно.
+          Здесь могла быть форма регистрации, подписка на рассылку или
+          что-нибудь в этом духе.
         </p>
-        <button class="modal__close">x</button>
+        <form class="modal__form form">
+          <label class="form__label" for="email">
+            <input
+              type="email"
+              id="email"
+              class="form__input"
+              placeholder="Введите вашу почту"
+            />
+          </label>
+          <input type="submit" class="form__button" value="Подписаться" />
+        </form>
+        <button class="modal__close" aria-label="close">
+          <span class="visually-hidden">Close</span>
+        </button>
       </div>
     </div>
     <script src="build/app.js"></script>
