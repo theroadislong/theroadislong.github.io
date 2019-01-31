@@ -183,7 +183,7 @@ var searchSelectHandler = function searchSelectHandler(evt) {
 };
 
 var searchHandler = function searchHandler() {
-  var searchValue = searchInput.value;
+  var searchValue = searchInput.value.toLowerCase();
   var sortValue = sortInput.value || "";
 
   var filterFunction = function filterFunction(object) {
