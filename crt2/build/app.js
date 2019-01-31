@@ -27,11 +27,11 @@
     };
 
     var sortBig = function sortBig(object) {
-      return searchValue === "" ? object : object[selectedSearchSelect] > sortValue;
+      return sortValue === "" ? object : object[selectedSearchSelect] > sortValue;
     };
 
     var sortSmall = function sortSmall(object) {
-      return searchValue === "" ? object : object[selectedSearchSelect] < sortValue;
+      return sortValue === "" ? object : object[selectedSearchSelect] < sortValue;
     };
 
     var filteredBySearchObjects = window.data.objects.map(window.utils.prettify).filter(function (object) {
