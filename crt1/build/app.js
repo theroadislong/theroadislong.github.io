@@ -23,7 +23,7 @@ var modalClose = function modalClose() {
 
 document.addEventListener("keydown", function (evt) {
   if (modal.classList.contains("modal--opened") && event.keyCode === escKeyCode) {
-    modal.classList.remove("modal--opened");
+    modalClose();
   }
 });
 document.addEventListener("click", function (evt) {
