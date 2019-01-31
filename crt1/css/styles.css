@@ -34,6 +34,7 @@
 
 @media (max-width: 500px) {
   .card {
+    display: block;
     margin: 0 auto;
   }
   .modal {
