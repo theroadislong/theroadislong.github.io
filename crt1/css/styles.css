@@ -1,18 +1,18 @@
 .card {
-  display: inline-block;
-  max-width: 200px;
   margin: 20px;
   padding: 10px;
+  display: inline-block;
+  max-width: 200px;
   text-align: center;
 }
 
 .card__button {
-  font-family: 'Roboto', sans-serif;
   padding: 10px 20px;
-  color: white;
-  background-color: blue;
+  font-family: 'Roboto', sans-serif;
   font-size: 18px;
   line-height: 1.2;
+  color: white;
+  background-color: blue;
   border: none;
   border-radius: 30px;
   cursor: pointer;
@@ -23,19 +23,19 @@
 }
 
 .modal {
-  display: none;
   position: fixed;
+  top: 0;
+  left: 0;
+  display: none;
   height: 100%;
   width: 100%;
   background:rgba(0,0,0,.8);
-  left: 0;
-  top: 0;
 }
 
 @media (max-width: 500px) {
   .card {
-    display: block;
     margin: 0 auto;
+    display: block;
   }
   .modal {
     cursor: pointer;
@@ -47,36 +47,36 @@
 }
 
 .modal__body {
-  transform: translate(-50%, -50%);
+  position: relative;
   top: 50%;
   left: 50%;
-  max-width: 500px;
-  position: relative;
   padding: 20px;
+  max-width: 500px;
   background-color: lightseagreen;
+  transform: translate(-50%, -50%);
 }
 
 .modal__close {
   position: absolute;
   top: 20px;
   right: 20px;
-  cursor: pointer;
-  border: none;
+  padding: 0;
   width: 20px;
   height: 20px;
-  padding: 0;
   background-color: transparent;
+  border: none;
+  cursor: pointer;
 }
 
 .modal__close::after,
 .modal__close::before {
   position: absolute;
-  content: '';
-  width: 22px;
-  height: 4px;
-  background-color: black;
   top: 8px;
   left: -1px;
+  width: 22px;
+  height: 4px;
+  content: '';
+  background-color: black;
 }
 
 .modal__close::after {
@@ -88,12 +88,12 @@
 }
 
 .visually-hidden {
-  border: 0;
-  clip: rect(0 0 0 0);
-  height: 1px;
-  margin: -1px;
-  overflow: hidden;
-  padding: 0;
   position: absolute;
+  margin: -1px;
+  padding: 0;
+  border: 0;
   width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
 }
