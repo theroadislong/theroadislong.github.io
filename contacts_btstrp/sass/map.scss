@@ -1,0 +1,16 @@
+.map__object {
+  position: relative;
+  margin-bottom: 100px;
+  background-color: #e0e0e0;
+  min-height: 470px;
+}
+
+.map__object::after {
+  position: absolute;
+  left: 54%;
+  top: 39%;
+  content: "";
+  width: 22px;
+  height: 32px;
+  background-image: url('../img/pointer.png')
+}

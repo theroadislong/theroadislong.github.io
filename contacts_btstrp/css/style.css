@@ -187,6 +187,9 @@ img {
 .gallery__col:nth-child(odd) {
   background-color: #dddddd; }
 
+.gallery__wrapper {
+  padding: 0; }
+
 .footer {
   padding: 95px 0;
   background-color: #141414;

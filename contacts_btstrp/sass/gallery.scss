@@ -1,0 +1,21 @@
+.gallery__row {
+  margin: 0;
+}
+
+.gallery__col {
+  padding: 0;
+  min-width: 300px;
+  min-height: 300px;
+} 
+
+.gallery__col:nth-child(even) {
+  background-color: #838383;
+}
+
+.gallery__col:nth-child(odd) {
+  background-color: #dddddd;
+}
+
+.gallery__wrapper {
+  padding: 0;
+}
