@@ -1,3 +1,54 @@
+.section {
+  padding: 114px 0; }
+
+.section__heading {
+  margin: 0;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 38px;
+  text-align: center;
+  margin-bottom: 20px; }
+
+.section__description {
+  margin: 0 auto;
+  max-width: 512px;
+  font-size: 18px;
+  line-height: 28px;
+  font-family: 'Nunito Sans', sans-serif;
+  text-align: center;
+  color: #787878; }
+
+.subsection {
+  padding: 100px 0; }
+
+.subsection__heading {
+  margin: 0;
+  margin-bottom: 30px;
+  font-size: 30px;
+  font-weight: 500;
+  font-family: 'Montserrat', sans-serif;
+  letter-spacing: 0.3px; }
+
+.subsection__description {
+  margin: 0;
+  margin-bottom: 26px;
+  font-size: 16px;
+  line-height: 1.5;
+  font-family: 'Nunito Sans', sans-serif;
+  color: #787878;
+  letter-spacing: 0.08px; }
+
+.button {
+  font-size: 12px;
+  background-color: #10c9c3;
+  border: none;
+  color: #ffffff;
+  text-transform: uppercase;
+  padding: 20px 34px;
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 500;
+  letter-spacing: 1.2px;
+  cursor: pointer; }
+
 html {
   box-sizing: border-box; }
 
@@ -17,13 +68,16 @@ body {
 .container {
   max-width: 1200px; }
 
+.container-fluid {
+  padding: 0; }
+
 img {
   max-width: 100%;
   height: auto; }
 
 .header {
   padding-top: 40px;
-  padding-bottom: 40px; }
+  padding-bottom: 33px; }
 
 .header-menu {
   display: flex;
@@ -49,49 +103,34 @@ img {
   color: #20cdc7; }
 
 .main {
-  background-color: #f5f5f5;
-  padding: 90px 0; }
+  background-color: #f5f5f5; }
 
-.main__heading {
-  margin: 0;
-  margin-bottom: 20px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 38px;
-  text-align: center; }
+.statistics {
+  padding: 90px 0;
+  color: #ffffff;
+  background-color: #10c9c3;
+  font-family: 'Montserrat', sans-serif; }
 
-.main__description {
-  margin: 0 auto;
-  max-width: 512px;
-  font-size: 18px;
-  line-height: 28px;
-  font-family: 'Nunito Sans', sans-serif;
-  text-align: center;
-  color: #787878; }
+.about {
+  color: #ffffff;
+  background-color: #3e3e3e; }
+
+.about-me {
+  padding: 132px 0;
+  padding-left: 12px; }
+
+.about-me__wrapper {
+  max-width: 454px;
+  margin-left: 80px; }
+
+@media (max-width: 992px) {
+  .about-me__wrapper {
+    margin-left: 0;
+    text-align: center; } }
 
 .contacts__wrapper {
   justify-content: space-between;
   padding: 90px 0; }
-
-.section__title {
-  font-size: 30px;
-  font-weight: 500;
-  font-family: 'Montserrat', sans-serif;
-  letter-spacing: 0.3px; }
-
-.contacts__heading {
-  margin: 0;
-  margin-bottom: 30px; }
-
-.section__description {
-  font-size: 16px;
-  line-height: 1.5;
-  font-family: 'Nunito Sans', sans-serif;
-  color: #787878;
-  letter-spacing: 0.08px; }
-
-.contacts__description {
-  margin: 0;
-  margin-bottom: 26px; }
 
 .contact-list {
   font-family: 'Nunito Sans', sans-serif;
@@ -146,18 +185,6 @@ img {
 .form__input--textarea {
   resize: none; }
 
-.form__button {
-  font-size: 12px;
-  background-color: #10c9c3;
-  border: none;
-  color: #ffffff;
-  text-transform: uppercase;
-  padding: 20px 34px;
-  font-family: 'Montserrat', sans-serif;
-  font-weight: 500;
-  letter-spacing: 1.2px;
-  cursor: pointer; }
-
 .map__object {
   position: relative;
   margin-bottom: 100px;
@@ -189,6 +216,51 @@ img {
 
 .gallery__wrapper {
   padding: 0; }
+
+@media (max-width: 570px) {
+  .fact {
+    text-align: center; } }
+
+.fact__ico {
+  display: inline-block;
+  min-height: 41px;
+  min-width: 44px;
+  margin-right: 24px; }
+
+.fact__description {
+  display: inline-block;
+  min-width: 170px; }
+
+.fact__number {
+  font-size: 18px;
+  line-height: 1.66;
+  letter-spacing: 0.5px; }
+
+.fact__category {
+  font-size: 12px;
+  line-height: 2.5;
+  letter-spacing: 1.2px;
+  text-transform: uppercase; }
+
+.fact__ico {
+  background-repeat: no-repeat;
+  background-position: center; }
+
+.fact--projects .fact__ico {
+  background-image: url("../img/ico-bag.png"); }
+
+.fact--hours .fact__ico {
+  background-image: url("../img/ico-clock.png"); }
+
+.fact--feedbacks .fact__ico {
+  background-image: url("../img/ico-star.png"); }
+
+.fact--clients .fact__ico {
+  background-image: url("../img/ico-like.png"); }
+
+.cta {
+  background-color: #ffffff;
+  text-align: center; }
 
 .footer {
   padding: 95px 0;
