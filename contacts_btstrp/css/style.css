@@ -122,7 +122,8 @@ img {
 
 .about-me {
   padding: 132px 0;
-  padding-left: 12px; }
+  padding-left: 12px;
+  padding-right: 12px; }
 
 .about-me__wrapper {
   max-width: 454px;
@@ -130,7 +131,7 @@ img {
 
 @media (max-width: 992px) {
   .about-me__wrapper {
-    margin-left: 0;
+    margin: 0 auto;
     text-align: center; } }
 
 .contacts__wrapper {
