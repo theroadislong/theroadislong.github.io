@@ -47,12 +47,16 @@
   font-family: 'Montserrat', sans-serif;
   font-weight: 500;
   letter-spacing: 1.2px;
-  cursor: pointer; }
+  cursor: pointer;
+  transition: background-color 0.5s ease-in-out; }
 
 .button:hover {
   color: #10c9c3;
   background-color: #ffffff;
   border: 2px solid #10c9c3; }
+
+.button:not(:hover):focus {
+  background-color: #258e8b; }
 
 html {
   box-sizing: border-box; }
@@ -176,8 +180,11 @@ img {
   transition: box-shadow .3s;
   outline: none; }
 
+.form__input:hover {
+  box-shadow: 0 2px 6px rgba(33, 33, 33, 0.12); }
+
 .form__input:focus {
-  box-shadow: 0 0 20px rgba(33, 33, 33, 0.2); }
+  box-shadow: 0 4px 12px rgba(33, 33, 33, 0.12); }
 
 .form__input::-webkit-input-placeholder {
   color: #787878; }
