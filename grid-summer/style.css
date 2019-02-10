@@ -196,6 +196,8 @@ body {
   position: relative;
   width: 48px;
   height: 24px;
+  border: none;
+  background-color: transparent;
 }
 
 .arrow::before {
@@ -214,7 +216,7 @@ body {
 .arrow::after {
   content: '';
   position: absolute;
-  top: 9px;
+  top: 10px;
   left: 0;
   width: 44px;
   height: 4px;
