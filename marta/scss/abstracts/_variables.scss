@@ -1,0 +1,14 @@
+$text-font-stack: 'Source Sans Pro', sans-serif;
+
+$text-color: rgb(39,39,39);
+$color-white: rgba(255, 255, 255, 1);
+$color-yellow: rgb(255,202,0);
+$button-text-color: rgb(37,15,138);
+
+$max-width: 980px !default;
+
+$breakpoints: (
+  'small': 320px,
+  'medium': 768px,
+  'large': 1024px,
+) !default;

@@ -1,0 +1,18 @@
+.header {
+  padding-top: 20px;
+  width: 100%;
+  background: linear-gradient(151.42deg, #250E8A 0%, #00F9F7 99.27%);
+
+  &__nav {
+    margin-bottom: 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+}
+
+@media (max-width: 720px) {
+  .header__nav {
+    flex-direction: column;
+  }
+}

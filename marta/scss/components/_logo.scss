@@ -1,0 +1,12 @@
+.logo {
+  width: 143px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &__description {
+    font-size: 20px;
+    line-height: 1.25;
+    color: $color-white;
+  }
+}
