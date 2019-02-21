@@ -1,0 +1,202 @@
+html {
+    box-sizing: border-box;
+  }
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.container {
+    margin: 0 auto;
+    max-width: 830px;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}  
+
+.header {
+    width: 100%;
+    background-color: rgba(235, 241, 221, 1);
+}
+
+.header__wrapper {
+    display: flex;
+    align-items: center; 
+    padding: 0 30px;
+}
+
+.logo {
+    min-width: 160px;
+}
+
+.contacts__item {
+    color: black;
+    font-weight: bold;
+}
+
+.contacts__link {
+    color: black;
+    font-weight: normal;
+    text-decoration: none;
+}
+
+.contacts__link:hover {
+    color: gray;
+    text-decoration: underline;
+}
+
+.contacts__link--underline {
+    text-decoration: underline;
+}
+
+.main {
+    width: 100%;
+    padding-bottom: 60px;
+    background-color: rgba(235, 241, 221, 1);
+}
+
+.main__heading {
+    margin: 0;
+    padding: 20px 0;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+    font-size: 22px;
+    background-color: rgba(235, 241, 221, 1);
+}
+
+.table__heading {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(155,187,89, 1);
+}
+
+.table__subheading {
+    text-align: center;
+}
+
+.table__category {
+    width: 100px;
+    text-transform: uppercase;
+    font-weight: bold;
+    text-align: center;
+}
+
+.table tr:nth-child(even) {
+    background-color: rgba(205,221,172, 1);
+}
+
+.table tr:nth-child(odd) {
+    background-color: rgba(230,238,213, 1);
+}
+
+.table__left-text {
+    width: 160px;
+    text-align: center;
+    font-weight: bold;
+    color: white;
+    background-color: rgba(155,187,89, 1);
+}
+
+.table__left-text--heading {
+    text-transform: uppercase;
+}
+
+.table__symbol {
+    display: block;
+    color: black;
+    text-align: center;
+    font-weight: normal;
+    font-size: 18px;
+}
+
+.table__price {
+    text-align: center;
+
+}
+
+.table__old-price {
+    text-decoration: line-through;
+    font-size: 12px;
+}
+
+.table__new-price {
+    margin-left: 6px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+    font-size: 14px;
+}
+
+.table__left-text--big {
+    width: 660px;
+}
+
+.table--big {
+    margin-top: 20px;
+}
+
+.table--big .table__left-text {
+    text-align: left;
+}
+
+.table--big .table__left-text--heading {
+    text-align: center;
+}
+
+.table__right-text {
+    width: 170px;
+    text-align: center;
+    font-weight: bold;
+    color: red;
+}
+
+.table__right-text--heading {
+    color: white;
+    background-color: rgba(155,187,89, 1);
+}
+
+.table__main-text {
+    margin: 0;
+    padding: 0;
+    vertical-align: top;
+}
+
+.table__main-text--last-column {
+    width: 260px;
+}
+
+.table__text {
+    margin: 0;
+    padding: 0;
+}
+
+.table__main-list {
+    margin: 0;
+    font-size: 14px;
+    list-style-position: inside;
+    padding: 5px;
+}
+
+.table__main-docs {
+    display: block;
+    margin: 30px 0;
+    font-style: italic;
+}
+
+.table__main-plus {
+    display: block;
+    margin: 30px 0;
+}
