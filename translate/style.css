@@ -36,7 +36,7 @@ body {
 }
 
 .logo {
-    min-width: 160px;
+    min-width: 170px;
 }
 
 .contacts__item {
@@ -94,16 +94,16 @@ body {
     text-align: center;
 }
 
-.table tr:nth-child(even) {
+.table__row:nth-child(even) {
     background-color: rgba(205,221,172, 1);
 }
 
-.table tr:nth-child(odd) {
+.table__row:nth-child(odd) {
     background-color: rgba(230,238,213, 1);
 }
 
 .table__left-text {
-    width: 160px;
+    width: 170px;
     text-align: center;
     font-weight: bold;
     color: white;
