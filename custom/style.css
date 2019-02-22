@@ -14,7 +14,7 @@ body {
 
 .container {
 	margin: 0 auto;
-	max-width: 1200px;
+	max-width: 1000px;
 	padding: 0 20px;
 }
 
@@ -85,7 +85,12 @@ body {
 	}
 }
 
+.main {
+    margin-left: 200px;
+}
+
 .nav {
+    position: fixed;
 	height: 100vh;
 	width: 200px;
 	flex-shrink: 0;
@@ -142,10 +147,14 @@ body {
 @media (max-width: 800px) {
 	.content {
 		flex-direction: column;
-	}
+    }
+    .main {
+        margin-left: 0;
+        margin-top: 100px;
+    }
 	.nav {
 		height: auto;
-		width: auto;
+		width: 100%;
     }
     .nav__item {
         margin-bottom: 0;
@@ -154,5 +163,18 @@ body {
         flex-wrap: wrap;
 		flex-direction: row;
 		justify-content: space-around;
-	}
+    }
+}
+
+@media (max-width: 550px) {
+    .form__input-wrapper,
+    .form__select-wrapper {
+        flex-basis: 100%;
+    }
+    .form__input {
+        width: 100%;
+    }
+    .main {
+        margin-top: 200px;
+    }
 }
