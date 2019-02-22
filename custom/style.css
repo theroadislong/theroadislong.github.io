@@ -92,7 +92,7 @@ body {
 @media (max-width: 800px) {
     .table {
         display: block;
-        height: 200px;
+        height: 400px;
         overflow-y: scroll;
     }
     .table__row {
@@ -167,6 +167,8 @@ body {
 .content {
 	display: flex;
 }
+
+/* left panel to top transformation */
 
 @media (max-width: 800px) {
 	.content {
@@ -248,7 +250,6 @@ body {
 	display: block;
 }
 
-
 ::-webkit-scrollbar {
     display: none;
-    }
+}

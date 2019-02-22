@@ -1,12 +1,10 @@
-
-
 const accItems = document.querySelectorAll('.acc__title')
 
 let activeItem;
 accItems.forEach((item) => {
   item.addEventListener('click', (e) => {
     const currentItem =  e.currentTarget;
-    
+
     //show new 
     currentItem.classList.add('acc__active');
     currentItem.nextElementSibling.classList.add('active');
