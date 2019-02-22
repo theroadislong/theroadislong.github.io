@@ -110,7 +110,7 @@ body {
 	margin-bottom: 20px;
 }
 
-.nav__item-ico {
+.nav__link-ico {
 	margin-bottom: 10px;
 }
 
@@ -132,7 +132,7 @@ body {
 	color: black;
 }
 
-.nav__item-text {
+.nav__link-text {
 	text-align: center;
 }
 
@@ -154,7 +154,8 @@ body {
     }
 	.nav {
 		height: auto;
-		width: 100%;
+        width: 100%;
+        z-index: 1;
     }
     .nav__item {
         margin-bottom: 0;
