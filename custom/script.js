@@ -4,7 +4,7 @@ const accItems = document.querySelectorAll('.acc__title')
 
 let activeItem;
 accItems.forEach((item) => {
-  item.addEventListener('click', function(e) {
+  item.addEventListener('click', (e) => {
     const currentItem =  e.currentTarget;
     
     //show new 
@@ -20,3 +20,8 @@ accItems.forEach((item) => {
     activeItem = (activeItem ===  currentItem) ? 0 :  currentItem;
   });
 });
+
+const allRows = document.querySelectorAll('.table__row');
+allRows.forEach(row => {
+  row.children[0].classList.add('table__cell--active')
+})
