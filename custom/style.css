@@ -1,0 +1,40 @@
+html {
+    box-sizing: border-box;
+  }
+  
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+
+.form {
+    margin-top: 10px;
+    margin-left: 10px;
+}
+
+.form__input {
+    padding: 20px;
+    border: 1px solid rgba(100,100,100,0.7);
+    border-radius: 10px;
+}
+
+.form__input:focus ~ .form__input-placeholder {
+    top: 10px;
+    color: gray;
+}
+
+.form__input-wrapper {
+    position: relative;
+    padding-top: 20px;
+    margin-bottom: 20px;
+}
+
+.form__input-placeholder {
+    position: absolute;
+    top: 36px;
+    left: 20px;
+    transition: top 0.2s ease-out;
+    background-color: white;
+    padding: 5px;
+}
