@@ -8,9 +8,17 @@ html {
     box-sizing: inherit;
 }
 
+.container {
+    margin: 0 auto;
+    max-width: 1000px;
+}
+
 .form {
     margin-top: 10px;
     margin-left: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
 }
 
 .form__input {
@@ -19,15 +27,23 @@ html {
     border-radius: 10px;
 }
 
-.form__input:focus ~ .form__input-placeholder {
+.form__input:focus ~ .form__input-placeholder,
+.form__input:valid ~ .form__input-placeholder {
     top: 10px;
     color: gray;
+    transform: scale(0.9);
 }
 
-.form__input-wrapper {
+.form__input-wrapper,
+.form__select-wrapper {
     position: relative;
     padding-top: 20px;
     margin-bottom: 20px;
+}
+
+.form__input-wrapper,
+.form__select-wrapper {
+    flex-basis: 50%;
 }
 
 .form__input-placeholder {
@@ -36,5 +52,5 @@ html {
     left: 20px;
     transition: top 0.2s ease-out;
     background-color: white;
-    padding: 5px;
+    padding: 0 2px;
 }
