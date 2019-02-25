@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="/img/favicon.ico" type="image/x-icon">
+    <title>Задание 2</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside class="sidebar">
+        <nav class="nav">
+          <div class="nav__item"><a class="nav__link" href="index.html"><span class="nav__link-text">Главная</span></a></div>
+          <div class="nav__item"> <a class="nav__link" href="form.html"><span class="nav__link-text">Форма</span></a></div>
+          <div class="nav__item"><a class="nav__link" href="accordeon.html"><span class="nav__link-text">Аккордеон</span></a></div>
+          <div class="nav__item"><a class="nav__link" href="table.html"><span class="nav__link-text">Таблица</span></a></div>
+        </nav>
+      </aside>
+      <div class="content">
+        <form class="form">
+          <div class="input__wrapper">
+            <input class="input" type="text" id="name" required>
+            <label class="input__label" for="name">Имя</label>
+          </div>
+          <div class="input__wrapper">
+            <input class="input" type="text" id="surname" required>
+            <label class="input__label" for="surname">Фамилия</label>
+          </div>
+          <div class="input__wrapper">
+            <input class="input" type="text" id="email" required>
+            <label class="input__label" for="email">name@domain.com</label>
+          </div>
+          <div class="select select" id="select">
+            <button class="title" type="button">Выберите...</button>
+            <ul>
+              <li data-value="value1">Элемент селекта 1</li>
+              <li data-value="value2">Элемент селекта 2</li>
+              <li data-value="value3">Элемент селекта 3</li>
+              <li data-value="value4">Элемент селекта 4</li>
+            </ul>
+          </div>
+          <script src="js/form.js"></script>
+        </form>
+      </div>
+    </div>
+  </body>
+</html>
